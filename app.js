@@ -96,7 +96,7 @@ app.post('/login/facebook', passport.authenticate('facebookToken', { session: fa
   res.send(token);
 });
 
-const port = config.get("port");
+const port = process.env.PORT || config.get("port");
 
 app.listen(port, () => {
   console.log("listening...");
