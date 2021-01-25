@@ -99,5 +99,5 @@ app.post('/login/facebook', passport.authenticate('facebookToken', { session: fa
 const port = config.get("port");
 
 app.listen(port, () => {
-  console.log("listening.....");
+  console.log("listening...");
 });
